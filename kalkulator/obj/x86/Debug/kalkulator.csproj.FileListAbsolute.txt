@@ -1,0 +1,24 @@
+C:\Users\YuPavlovskij\Documents\Visual Studio 2010\Projects\kalkulator\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\YuPavlovskij\Documents\Visual Studio 2010\Projects\kalkulator\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\YuPavlovskij\Documents\Visual Studio 2010\Projects\kalkulator\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
+C:\Users\YuPavlovskij\Documents\Visual Studio 2010\Projects\kalkulator\kalkulator\bin\Debug\kalkulator.exe
+C:\Users\YuPavlovskij\Documents\Visual Studio 2010\Projects\kalkulator\kalkulator\bin\Debug\kalkulator.pdb
+C:\Users\YuPavlovskij\Documents\Visual Studio 2010\Projects\kalkulator\kalkulator\obj\x86\Debug\kalkulator.exe
+C:\Users\YuPavlovskij\Documents\Visual Studio 2010\Projects\kalkulator\kalkulator\obj\x86\Debug\kalkulator.pdb
+F:\kalkulator\kalkulator\obj\x86\Debug\kalkulator.exe
+F:\kalkulator\kalkulator\obj\x86\Debug\kalkulator.pdb
+F:\kalkulator\kalkulator\bin\Debug\kalkulator.exe
+F:\kalkulator\kalkulator\bin\Debug\kalkulator.pdb
+F:\kalkulator\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+F:\kalkulator\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\kalkulator\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
+C:\Users\1\Documents\Visual Studio 2010\Projects\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.exe
+C:\Users\1\Documents\Visual Studio 2010\Projects\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.exe
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\bin\Debug\kalkulator.exe
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\bin\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
+C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.csprojResolveAssemblyReference.cache
