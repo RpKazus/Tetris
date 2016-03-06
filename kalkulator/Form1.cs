@@ -85,12 +85,12 @@ namespace WindowsFormsApplication1
                     for (int x = 0; x < panel1.Width / r; x++)
                         Matrix[x, y] = false;
                     TempMatrix = Matrix;
-                    for(int i = 0; i < Matrix.GetLength(1); i++)
+                    for(int i = Matrix.GetLength(1) - 1; i > 0; i--)
                         for (int o = 0; o < Matrix.GetLength(0); o++)
                             if(y > i) TempMatrix[o, i + 1] = Matrix[o, i];
                     Matrix = TempMatrix;
                     Fallist.Clear();
-                    for (int i = Matrix.GetLength(1) - 1; i > 0; i--)
+                    for (int i = 0; i < Matrix.GetLength(1); i++)
                         for (int o = 0; o < Matrix.GetLength(0); o++)
                             if (Matrix[o, i]) Fallist.Add(new Point(o * r, i * r));  
                 }

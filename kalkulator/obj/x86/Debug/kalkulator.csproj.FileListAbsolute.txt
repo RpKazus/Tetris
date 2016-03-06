@@ -22,3 +22,11 @@ C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\WindowsFormsA
 C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
 C:\Users\KKondrashov\Desktop\ТЕТРИС\kalkulator\obj\x86\Debug\kalkulator.csprojResolveAssemblyReference.cache
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\kalkulator.exe
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\bin\Debug\kalkulator.exe
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\bin\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\kalkulator.csprojResolveAssemblyReference.cache
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
