@@ -20,7 +20,6 @@ namespace WindowsFormsApplication1
         SolidBrush sb = new SolidBrush(Color.Gold);
         int r = 20;
         List<Point> Fallist = new List<Point>();
-        bool[,] Matrix = new bool[18,24];
         public void DrawPoint(Graphics gr)
         {
             foreach (Point paint in Fallist)
@@ -73,26 +72,20 @@ namespace WindowsFormsApplication1
         }
         public void CheckLine()
         {
-            for (int y = 0; y < panel1.Height / r; y++ )
+            for (int y = 0; y < panel1.Height; y += r)
             {
-                bool isFull = true;
-                for (int x = 0; x < panel1.Width / r; x++)
-                    if(isFull) isFull = Matrix[x, y];
-                if (isFull)
+                List<Point> Liest = new List<Point>();
+                foreach (Point pp in Fallist)
                 {
-                    bool[,] TempMatrix = new bool[18, 24];
-
-                    for (int x = 0; x < panel1.Width / r; x++)
-                        Matrix[x, y] = false;
-                    TempMatrix = Matrix;
-                    for(int i = Matrix.GetLength(1) - 1; i > 0; i--)
-                        for (int o = 0; o < Matrix.GetLength(0); o++)
-                            if(y > i) TempMatrix[o, i + 1] = Matrix[o, i];
-                    Matrix = TempMatrix;
-                    Fallist.Clear();
-                    for (int i = 0; i < Matrix.GetLength(1); i++)
-                        for (int o = 0; o < Matrix.GetLength(0); o++)
-                            if (Matrix[o, i]) Fallist.Add(new Point(o * r, i * r));  
+                    if (pp.Y == y)
+                        Liest.Add(pp);
+                }
+                if (Liest.Count >= 18)
+                {
+                    foreach (Point pp in Liest)
+                        Fallist.Remove(pp);
+                    for (int i = 0; i < Fallist.Count; i++)
+                        if (Fallist[i].Y < y) Fallist[i] = new Point(Fallist[i].X, Fallist[i].Y + r);
                 }
             }
         }
@@ -116,12 +109,7 @@ namespace WindowsFormsApplication1
                     MessageBox.Show("Вы проиграли!!");
 
                     this.Close();
-                }
-                foreach (Point p in figure.FillPoints)
-                {
-                    Matrix[p.X / r, p.Y / r] = true;
-                }
-                
+                }                
                 Fallist.AddRange(figure.FillPoints);
                 //label2.Text = Convert.ToString(panel1.Height) + " " + Convert.ToString(figure.location.Y) + " " + Convert.ToString(Fallist[2].Y);
                 figure = new Class1();
