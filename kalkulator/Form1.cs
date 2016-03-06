@@ -11,7 +11,8 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        Class1 figure = new Class1();
+        int Score = 0;
+        Figure figure = new Figure();
         int defaultLoc = 0;
         public Form1()
         {
@@ -76,16 +77,14 @@ namespace WindowsFormsApplication1
             {
                 List<Point> Liest = new List<Point>();
                 foreach (Point pp in Fallist)
-                {
-                    if (pp.Y == y)
-                        Liest.Add(pp);
-                }
+                    if (pp.Y == y) Liest.Add(pp);
                 if (Liest.Count >= 18)
                 {
                     foreach (Point pp in Liest)
                         Fallist.Remove(pp);
                     for (int i = 0; i < Fallist.Count; i++)
                         if (Fallist[i].Y < y) Fallist[i] = new Point(Fallist[i].X, Fallist[i].Y + r);
+                    Score += 100;
                 }
             }
         }
@@ -96,11 +95,9 @@ namespace WindowsFormsApplication1
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
+            ScoreList.Text = Score.ToString();
             if (CanFall())
-            {
                 figure.step();
-                //label
-            }
             else
             {
                 if (figure.location.Y == 0)
@@ -112,13 +109,12 @@ namespace WindowsFormsApplication1
                 }                
                 Fallist.AddRange(figure.FillPoints);
                 //label2.Text = Convert.ToString(panel1.Height) + " " + Convert.ToString(figure.location.Y) + " " + Convert.ToString(Fallist[2].Y);
-                figure = new Class1();
+                figure = new Figure();
                 if(defaultLoc < 320) defaultLoc += 40;
                 else defaultLoc = 0;
                 figure.location = new Point(defaultLoc, 320);
                 CheckLine();
             }
-            label1.Text = Convert.ToString(panel1.Height) + " " + Convert.ToString(figure.location.Y);
             panel1.Invalidate();
         }
 
@@ -135,6 +131,10 @@ namespace WindowsFormsApplication1
                     if (CanRight())
                     figure.location = new Point(figure.location.X + r, figure.location.Y);
                     panel1.Invalidate();
+                    break;
+                case Keys.S:
+                    while(CanFall())
+                        figure.step();
                     break;
             }
         }

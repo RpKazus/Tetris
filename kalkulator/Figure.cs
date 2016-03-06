@@ -6,12 +6,17 @@ using System.Drawing;
 
 namespace WindowsFormsApplication1
 {
-    class Class1
+    abstract class Figure
     {
-
+        //Poles
         public int r = 20;
         Color c = Color.Gold;
         public Point location = new Point(0,0);
+        //Constructors
+        public Figure()
+        {
+        }
+        //Methods
         public void DrowFigure(Graphics gr)
         {
             Pen p = new Pen(Color.Black,2);
@@ -23,17 +28,9 @@ namespace WindowsFormsApplication1
             }
         }
 
-        public List<Point> FillPoints
+        public abstract List<Point> FillPoints
         {
-            get
-            {
-                List<Point> result = new List<Point>();
-                result.Add(location);
-                result.Add(new Point(location.X , location.Y + r));
-                result.Add(new Point(location.X +  r, location.Y + r));
-                result.Add(new Point(location.X +  r, location.Y));
-                return result;
-            }
+            get;
         }
 
         public void step()
