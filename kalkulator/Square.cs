@@ -8,7 +8,7 @@ namespace WindowsFormsApplication1
 {
     class Square : Figure
     {
-        Color c = Color.Gold;
+      
         public override List<Point> FillPoints
         {
             get

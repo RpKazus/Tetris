@@ -11,8 +11,9 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+
         int Score = 0;
-        Figure figure = new Figure();
+        Figure figure = new Line();
         int defaultLoc = 0;
         public Form1()
         {
@@ -31,7 +32,7 @@ namespace WindowsFormsApplication1
         }
         public bool CanFall()
         {
-            bool boolFall = figure.SLT.Y + figure.r + 1 < panel1.Height;
+            bool boolFall = figure.SNT.Y + figure.r + 1 < panel1.Height;
                 foreach (Point falling in figure.FillPoints)
                 {
                     foreach (Point falled in Fallist)
@@ -109,7 +110,7 @@ namespace WindowsFormsApplication1
                 }                
                 Fallist.AddRange(figure.FillPoints);
                 //label2.Text = Convert.ToString(panel1.Height) + " " + Convert.ToString(figure.location.Y) + " " + Convert.ToString(Fallist[2].Y);
-                figure = new Figure();
+                figure = new Line();
                 if(defaultLoc < 320) defaultLoc += 40;
                 else defaultLoc = 0;
                 figure.location = new Point(defaultLoc, 320);
@@ -136,7 +137,15 @@ namespace WindowsFormsApplication1
                     while(CanFall())
                         figure.step();
                     break;
+                case Keys.Space:
+                    if (CanFall()) figure.Rotate();                       
+                    break;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
