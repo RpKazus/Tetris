@@ -30,5 +30,3 @@ C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\kalkulator.csprojRe
 C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
-C:\Users\Казус\Documents\GitHub\Tetris\kalkulator\obj\x86\Debug\kalkulator.exe
-C:\Users\Казус\Documents\GitHub\Tetris\kalkulator\obj\x86\Debug\kalkulator.pdb
